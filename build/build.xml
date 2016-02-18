@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="all" name="all">
+    <target name="all" depends="visualization, screenshots, gif, video"/>
+
+    <target name="visualization">
+        <jar destfile="visualization.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="dna.graphVisualization.Visualization"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/Users/benni/TUD/Projects/ArgList/bin"/>
+            <fileset dir="../java/bin"/>
+            <fileset dir="../../DNA/config"/>
+            <fileset dir="../../DNA/bin"/>
+            <zipgroupfileset dir="../../DNA/lib/" includes="**/*.jar" />
+        </jar>
+    </target>
+
+    <target name="screenshots">
+        <jar destfile="screenshots.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="dna.graphVisualization.Screenshots"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/Users/benni/TUD/Projects/ArgList/bin"/>
+            <fileset dir="../java/bin"/>
+            <fileset dir="../../DNA/config"/>
+            <fileset dir="../../DNA/bin"/>
+            <zipgroupfileset dir="../../DNA/lib/" includes="**/*.jar" />
+        </jar>
+    </target>
+
+    <target name="gif">
+        <jar destfile="gif.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="dna.graphVisualization.Gif"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/Users/benni/TUD/Projects/ArgList/bin"/>
+            <fileset dir="../java/bin"/>
+            <fileset dir="../../DNA/config"/>
+            <fileset dir="../../DNA/bin"/>
+            <zipgroupfileset dir="../../DNA/lib/" includes="**/*.jar" />
+        </jar>
+    </target>
+
+    <target name="video">
+        <jar destfile="video.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="dna.graphVisualization.Video"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/Users/benni/TUD/Projects/ArgList/bin"/>
+            <fileset dir="../java/bin"/>
+            <fileset dir="../../DNA/config"/>
+            <fileset dir="../../DNA/bin"/>
+            <zipgroupfileset dir="../../DNA/lib/" includes="**/*.jar" />
+        </jar>
+    </target>
+</project>

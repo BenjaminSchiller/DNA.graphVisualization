@@ -1,4 +1,4 @@
-build/*,jar
+build/*.jar
 java/data
 java/config
 java/video
