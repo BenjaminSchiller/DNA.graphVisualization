@@ -38,6 +38,7 @@ public class Video extends Visualization {
 		(new File(v.videoDir)).mkdirs();
 		Config.overwrite("GRAPH_VIS_VIDEO_AUTO_RECORD", "true");
 		Config.overwrite("GRAPH_VIS_VIDEO_DIR", v.videoDir);
+		Config.overwrite("GRAPH_VIS_VIDEO_FILENAME", v.videoFilename);
 		Graph g = v.vis();
 		GraphVisualization.getGraphPanel(g).stopVideo();
 	}
