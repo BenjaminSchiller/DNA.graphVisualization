@@ -10,6 +10,9 @@ In total, four different versions of the visualization are provided, each in a s
 3. `gif.jar` - after create screenshots, an animated git is created from them
 4. `video.jar` - a video (avi) is generated form the graph
 
+All jars can be downloaded from [http://dynamic-networks.org/data/jars/DNA.graphVisualization/](http://dynamic-networks.org/data/jars/DNA.graphVisualization/).
+
+
 
 ## visualization.jar
 
