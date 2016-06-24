@@ -67,7 +67,7 @@ public class Visualization {
 
 		Visualization v = argList.getInstance(args);
 		v.vis();
-		System.exit(0);
+		// System.exit(0);
 	}
 
 	public Graph vis() throws Exception {
